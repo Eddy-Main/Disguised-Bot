@@ -1,0 +1,14 @@
+{
+	"name": "DisguiseBot",
+	"version": "1.0.0",
+	"description": "Ragnarok Online Disguise Event Bot",
+	"main": "bot.js",
+	"author": "Urang",
+	"dependencies": {
+		"axios": "^0.22.0",
+		"canvas": "^2.8.0",
+		"discord.js": "^13.2.0",
+		"dotenv": "^10.0.0",
+		"node-fetch": "^2.6.5"
+	}
+}
