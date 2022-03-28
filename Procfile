@@ -1,1 +1,1 @@
-Worker: node indexWithCommands.js
+Worker: node ./indexWithCommands.js
