@@ -14,7 +14,7 @@ class CommandList {
         "start"             : "Start",
         "settimer"          : "SetTimer",
         "showtimer"         : "ShowTimer",
-        "showcommands"      : "ShowCommands",
+        "help"              : "Help",
         "changeprefix"      : "ChangePrefix",
         "leaderboard"       : "Leaderboard",
         "serverleaderboard" : "ServerLeaderboard",
@@ -31,7 +31,7 @@ class CommandList {
 // Main layout of each Command
 class Command {
 
-    // Description of Command, used in the showCommands Command.
+    // Description of Command, used in the Help Command.
     static getDescription(channelVariable, serverID) {
         return "Command's Description";
     }
@@ -421,7 +421,7 @@ class ShowTimer extends Command {
 }
 
 // Shows all command.
-class ShowCommands extends Command {
+class Help extends Command {
     static getDescription(channelVariable, serverID) {
         return "List all the implemented commands.";
     }
@@ -611,7 +611,7 @@ class Leaderboard extends Command {
 class ServerLeaderboard extends Command {
 
     static getDescription(channelVariable, serverID) {
-        return "Display the server's Leaderboard of the server.";
+        return "Display the server's Leaderboard.";
     }
 
     // Displays the leaderboard, after sorting it.
@@ -685,4 +685,4 @@ class Stop extends Command {
 }
 
 
-module.exports = { Start, CommandList, SetTimer, ShowTimer, ShowCommands, ChangePrefix, Leaderboard, ServerLeaderboard, ResetLeaderboard, Skip, Stop  }
+module.exports = { Start, CommandList, SetTimer, ShowTimer, Help, ChangePrefix, Leaderboard, ServerLeaderboard, ResetLeaderboard, Skip, Stop  }

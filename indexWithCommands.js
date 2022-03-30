@@ -1,5 +1,5 @@
 // Imports of Command Classes
-const { Start, CommandList, SetTimer, ShowTimer, ShowCommands, ChangePrefix,
+const { Start, CommandList, SetTimer, ShowTimer, Help, ChangePrefix,
     Leaderboard, ServerLeaderboard, ResetLeaderboard, Skip, Stop } = require("./commands.js");
 
  // Initialize dotenv
@@ -25,8 +25,8 @@ client.on("message", async msg => {
         channelVariable[serverID] =
             {
                 "gameOn": false,                    
-                "defaultTimer": process.env.TIMER,
-                "prefix": process.env.PREFIX,
+                "defaultTimer": 20,
+                "prefix": "!",
                 "leaderBoard": {},
                 "serverLeaderBoard": {}
             };
