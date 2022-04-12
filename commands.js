@@ -322,7 +322,12 @@ class Start extends Command {
 
 
             if (winner) {
-                let winnerUsername = winner.username;
+                let winnerUsername = await msg.guild.members.fetch(winner.id)
+                    .then(member => {
+                        if (member.nickname == null)
+                            return winner.username;
+                        return member.nickname;
+                    });
 
                 // Update leaderboard
                 Leaderboard.updateLeaderboard(channelVariable, serverID, "leaderBoard", winnerUsername);
