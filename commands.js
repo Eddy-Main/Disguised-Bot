@@ -581,9 +581,9 @@ class Leaderboard extends Command {
             let point = listNamesPoints[1][i];
 
             if (boardMessage == "")
-                boardMessage = "`" + (name.slice(0, 30).padEnd(40, ".").concat(point)) + "`";
+                boardMessage = "`" + (name.slice(0, 25).padEnd(25, ".").concat((point.toString()).padStart(5, "."))) + "`";
             else
-                boardMessage += "\n`" + (name.slice(0, 30).padEnd(40, ".").concat(point)) + "`";
+                boardMessage += "\n`" + (name.slice(0, 25).padEnd(25, ".").concat((point.toString()).padStart(5, "."))) + "`";
         }
 
 
