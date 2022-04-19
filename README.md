@@ -8,3 +8,6 @@ It was also my first time coding on Javascript, which made quite a bit of change
 I'll try to add html page with either screenshots or video to showcase my bot.
 
 Thanks for dropping by !
+
+Link to Bot :
+https://discord.com/api/oauth2/authorize?client_id=893499471328063498&permissions=26624&scope=bot
