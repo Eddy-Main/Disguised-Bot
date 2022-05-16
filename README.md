@@ -1,11 +1,8 @@
 # Disguised-Bot
 
 This is my first personnal project : A Discord quiz bot simulating a mini-game from a game called Ragnarok-Online.
-It took me a full month of work and... procrastination to finish it.
-I used Node.js, which allowed myself to interact with discord.
-It was also my first time coding on Javascript, which made quite a bit of change from my usual coding language.
-
-I'll try to add html page with either screenshots or video to showcase my bot.
+It took me about full month of work with some... procrastination to finish it !
+It was also my first time coding with Javascript and Node.js, which made quite a bit of change from my usual coding language.
 
 Thanks for dropping by !
 
